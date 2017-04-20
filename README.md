@@ -1,5 +1,5 @@
 # ldapTreeGenerator
-Generate ldap tree with test users and groups
+Generate ldap tree with users and groups. 
 
 ```bash
 npm install
@@ -11,3 +11,7 @@ node generator.js
 
 ldapadd -D "cn=admin,dc=testldap,dc=com" -x -w PASSWORD -h YOUR_HOST -f dump.ldif
 ```
+
+NOTE: All users has the same password: secret
+
+This is for testing purposes.
