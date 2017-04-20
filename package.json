@@ -1,0 +1,16 @@
+{
+  "name": "ldapTreeGenerator",
+  "version": "1.0.0",
+  "description": "Generate ldap tree with test users and groups",
+  "main": "generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jmacias@solidgear.es",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^3.0.6",
+    "node-random-name": "^1.0.1",
+    "sillyname": "^0.1.0"
+  }
+}
