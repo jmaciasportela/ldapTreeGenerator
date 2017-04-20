@@ -14,4 +14,4 @@ ldapadd -D "cn=admin,dc=testldap,dc=com" -x -w PASSWORD -h YOUR_HOST -f dump.ldi
 
 NOTE: All users has the same password: secret
 
-This is for testing purposes.
+This is for testing purposes and designed for owncloud QA team, but is very easy to adapt to other organizations.
