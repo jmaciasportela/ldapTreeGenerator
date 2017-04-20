@@ -2,6 +2,10 @@
 Generate ldap tree with users and groups. 
 
 ```bash
+docker run -t -i -d -e LDAP_ORGANISATION="ownCloud" -e LDAP_DOMAIN="owncloudqa.com" -e LDAP_ADMIN_PASSWORD="123456" -p 389:389 osixia/openldap:latest
+```
+
+```bash
 npm install
 node generator.js
 ? How many users do you want 100
@@ -9,7 +13,7 @@ node generator.js
 ? How many users in each group do you want 10
 ? Is the data entered correct?(just hit enter for YES) Yes
 
-ldapadd -D "cn=admin,dc=testldap,dc=com" -x -w PASSWORD -h YOUR_HOST -f dump.ldif
+ldapadd -D "cn=admin,dc=owncloudqa,dc=com" -x -w 123456 -h localhost:389 -f dump.ldif
 ```
 
 NOTE: All users has the same password: secret
