@@ -1,6 +1,7 @@
 # ldapTreeGenerator
 Generate ldap tree with test users and groups
 
+```bash
 npm install
 node generator.js
 ? How many users do you want 100
@@ -9,3 +10,4 @@ node generator.js
 ? Is the data entered correct?(just hit enter for YES) Yes
 
 ldapadd -D "cn=admin,dc=testldap,dc=com" -x -w PASSWORD -h YOUR_HOST -f dump.ldif
+```
